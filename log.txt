@@ -1,0 +1,6 @@
+medals = 1
+medals = 2
+medals = 1
+medals = 0
+medals = -1
+medals is under 0
