@@ -6,7 +6,7 @@ var fs = require('fs');
 //get new athlete
 var federer = athlete.createAthlete();
 
-//
+
 //attach function to the medalChanged event
 federer.on('medalsChanged',athlete.printMedal);
 federer.on('medalsChanged',athlete.checkZero);
