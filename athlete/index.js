@@ -12,7 +12,7 @@ fs.open('log.txt','w',function(error, fd) {});
 
 util.inherits(Athlete,events.EventEmitter);
 
-//
+///
 // represent an athlete with medals
 // inherits from EventEmitter
 function Athlete() {
