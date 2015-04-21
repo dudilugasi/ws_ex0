@@ -32,25 +32,27 @@ Athlete.prototype.subtractMedal = function() {
     this.emit('medalsChanged');
 };
 
-//exports new athlete object
-exports.createAthlete = function() {
-  return new Athlete();
-};
-
-
-
 //function that prints medal amount
-exports.printMedal = function() {
+function printMedal() {
     console.log("medals = ",this._medal);
     fs.appendFile('log.txt',"medals = " + this._medal + "\n");
-};
+}
 
 //checks if the medals is under zero
-exports.checkZero = function() {
+function checkZero() {
     if (this._medal < 0) {
         console.log("medals is under 0");
         fs.appendFile('log.txt','medals is under 0\n');
     }
+}
 
+//exports new athlete object
+exports.createAthlete = function() {
+    var newAthlete = new Athlete();
+    newAthlete.on('medalsChanged',printMedal);
+    newAthlete.on('medalsChanged',checkZero);
+    return newAthlete;
 };
+
+
 
