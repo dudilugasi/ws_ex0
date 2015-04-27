@@ -1,0 +1,16 @@
+{
+  "name": "athlete_web_server",
+  "version": "1.0.0",
+  "description": "",
+  "main": "server.js",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/dudilugasi/ws_ex0.git"
+  },
+  "author": "dudi lugasi",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/dudilugasi/ws_ex0/issues"
+  },
+  "homepage": "https://github.com/dudilugasi/ws_ex0"
+}
